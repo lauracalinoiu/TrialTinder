@@ -15,6 +15,7 @@ class SwipeViewController: UIViewController {
     @IBOutlet weak var kolodaView: KolodaView!
     var persons: [Person] = []
     var ref: DatabaseReference!
+    let dispatch_group = DispatchGroup()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,21 +25,34 @@ class SwipeViewController: UIViewController {
         
         self.ref = Database.database().reference()
         
+        loadDataAndNotify {
+            self.kolodaView.reloadData()
+        }
+        
+        
+    }
+    
+    func loadDataAndNotify (completion: @escaping () -> () ) {
         loadData (){
             for person in self.persons {
+                self.dispatch_group.enter()
                 URLSession.shared.dataTask(with: NSURL(string: person.image)! as URL, completionHandler: { (data, response, error) -> Void in
                     
                     guard error == nil else { return }
                     DispatchQueue.main.async(execute: { () -> Void in
                         person.imageData = data
+                        self.dispatch_group.leave()
                     })
                     
                 }).resume()
+                
             }
+            
+            self.dispatch_group.notify(queue: DispatchQueue.main, execute: {
+                print("All Done"); completion()
+            })
         }
-        
-        
-        
+
     }
 
     func loadData(completion: @escaping () -> () ) {
