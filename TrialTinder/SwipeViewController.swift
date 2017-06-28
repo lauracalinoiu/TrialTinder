@@ -16,10 +16,12 @@ class SwipeViewController: UIViewController {
     var persons: [Person] = []
     var ref: DatabaseReference!
     let dispatch_group = DispatchGroup()
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
+        activityIndicator.startAnimating()
         kolodaView.dataSource = self
         kolodaView.delegate = self
         
@@ -27,6 +29,8 @@ class SwipeViewController: UIViewController {
         
         loadDataAndNotify {
             self.kolodaView.reloadData()
+            self.activityIndicator.stopAnimating()
+            self.activityIndicator.isHidden = true
         }
         
         

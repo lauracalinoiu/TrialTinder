@@ -34,18 +34,24 @@
                                 <rect key="frame" x="14" y="103" width="347" height="461"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="jDz-5T-yhr">
+                                <rect key="frame" x="177" y="323" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="lUn-a4-kDe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="23" id="3yw-cu-euc"/>
+                            <constraint firstItem="jDz-5T-yhr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D6E-AA-RiP"/>
                             <constraint firstItem="w8I-uj-uN0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RnV-2l-yn8"/>
                             <constraint firstItem="w8I-uj-uN0" firstAttribute="trailing" secondItem="lUn-a4-kDe" secondAttribute="trailing" id="b9w-4a-tan"/>
                             <constraint firstItem="w8I-uj-uN0" firstAttribute="top" secondItem="lUn-a4-kDe" secondAttribute="bottom" constant="16" id="bWB-Oz-UXL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lUn-a4-kDe" secondAttribute="trailing" constant="-2" id="emq-Ev-arJ"/>
                             <constraint firstItem="w8I-uj-uN0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l40-eo-QTP"/>
+                            <constraint firstItem="jDz-5T-yhr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ls7-zT-9h5"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="jDz-5T-yhr" id="efB-y2-Rpo"/>
                         <outlet property="kolodaView" destination="w8I-uj-uN0" id="PKg-bG-Mty"/>
                     </connections>
                 </viewController>
