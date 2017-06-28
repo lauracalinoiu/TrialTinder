@@ -7,6 +7,7 @@ target 'TrialTinder' do
 
   # Pods for TrialTinder
 pod 'Koloda', '~> 4.0'
+pod 'Firebase/Core'
 
 
   target 'TrialTinderTests' do
