@@ -27,7 +27,7 @@ class SwipeViewController: UIViewController {
         
         self.ref = Database.database().reference()
         
-        loadDataAndNotify {
+        loadAllPersonsWithImages {
             self.kolodaView.reloadData()
             self.activityIndicator.stopAnimating()
             self.activityIndicator.isHidden = true
@@ -36,8 +36,8 @@ class SwipeViewController: UIViewController {
         
     }
     
-    func loadDataAndNotify (completion: @escaping () -> () ) {
-        loadData (){
+    func loadAllPersonsWithImages (completion: @escaping () -> () ) {
+        loadAllPersons (){
             for person in self.persons {
                 self.dispatch_group.enter()
                 URLSession.shared.dataTask(with: NSURL(string: person.image)! as URL, completionHandler: { (data, response, error) -> Void in
@@ -59,7 +59,7 @@ class SwipeViewController: UIViewController {
 
     }
 
-    func loadData(completion: @escaping () -> () ) {
+    func loadAllPersons(completion: @escaping () -> () ) {
         _ = ref.child("persons").observeSingleEvent(of: .value, with: {(snapshot) in
             for child in snapshot.children.allObjects {
                 
@@ -91,7 +91,10 @@ extension SwipeViewController: KolodaViewDataSource {
     }
     
     func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
-        return UIImageView(image: UIImage(data: persons[index].imageData!))
+        //return UIImageView(image: UIImage(data: persons[index].imageData!))
+        let swipeCardView = Bundle.main.loadNibNamed("SwipeCardView", owner: self, options: nil)?.first as! SwipeCardView
+        swipeCardView.person = persons[index]
+        return swipeCardView
     }
     
     func koloda(koloda: KolodaView, viewForCardOverlayAt index: Int) -> OverlayView? {
