@@ -1,0 +1,6 @@
+framework module Pods_TrialTinder {
+  umbrella header "Pods-TrialTinder-umbrella.h"
+
+  export *
+  module * { export * }
+}

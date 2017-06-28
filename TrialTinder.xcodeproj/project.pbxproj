@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4607EDDB273542E34D4E4130 /* Pods_TrialTinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8A8175F68F3014E486C6BB /* Pods_TrialTinderTests.framework */; };
 		5B754B6B1F03D29600EF1DC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B754B6A1F03D29600EF1DC9 /* AppDelegate.swift */; };
 		5B754B6D1F03D29600EF1DC9 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B754B6C1F03D29600EF1DC9 /* SwipeViewController.swift */; };
 		5B754B701F03D29600EF1DC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B754B6E1F03D29600EF1DC9 /* Main.storyboard */; };
 		5B754B721F03D29600EF1DC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B754B711F03D29600EF1DC9 /* Assets.xcassets */; };
 		5B754B751F03D29600EF1DC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B754B731F03D29600EF1DC9 /* LaunchScreen.storyboard */; };
 		5B754B801F03D29600EF1DC9 /* TrialTinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B754B7F1F03D29600EF1DC9 /* TrialTinderTests.swift */; };
-		5B754B8D1F03D93800EF1DC9 /* Koloda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B754B8B1F03D93800EF1DC9 /* Koloda.framework */; };
-		5B754B8E1F03D93800EF1DC9 /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B754B8C1F03D93800EF1DC9 /* pop.framework */; };
 		5B754B911F03DED300EF1DC9 /* CustomKolodaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B754B901F03DED300EF1DC9 /* CustomKolodaView.swift */; };
+		EAB8B0870BD02334A10F36C0 /* Pods_TrialTinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D2BCD53BF13AD4145CA599 /* Pods_TrialTinder.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		094CBBCEA3839E189D1DB633 /* Pods-TrialTinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrialTinderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrialTinderTests/Pods-TrialTinderTests.release.xcconfig"; sourceTree = "<group>"; };
+		176B20397A36B950173B19C9 /* Pods-TrialTinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrialTinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrialTinder/Pods-TrialTinder.debug.xcconfig"; sourceTree = "<group>"; };
+		287D6F675FA8F13023D86DCA /* Pods-TrialTinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrialTinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrialTinder/Pods-TrialTinder.release.xcconfig"; sourceTree = "<group>"; };
 		5B754B671F03D29600EF1DC9 /* TrialTinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrialTinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B754B6A1F03D29600EF1DC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B754B6C1F03D29600EF1DC9 /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +45,9 @@
 		5B754B8B1F03D93800EF1DC9 /* Koloda.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Koloda.framework; path = Carthage/Build/iOS/Koloda.framework; sourceTree = "<group>"; };
 		5B754B8C1F03D93800EF1DC9 /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = Carthage/Build/iOS/pop.framework; sourceTree = "<group>"; };
 		5B754B901F03DED300EF1DC9 /* CustomKolodaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomKolodaView.swift; sourceTree = "<group>"; };
+		9E8A8175F68F3014E486C6BB /* Pods_TrialTinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrialTinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0D2BCD53BF13AD4145CA599 /* Pods_TrialTinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrialTinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F32F1CFCFD027659F02D5AAE /* Pods-TrialTinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrialTinderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrialTinderTests/Pods-TrialTinderTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,8 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B754B8D1F03D93800EF1DC9 /* Koloda.framework in Frameworks */,
-				5B754B8E1F03D93800EF1DC9 /* pop.framework in Frameworks */,
+				EAB8B0870BD02334A10F36C0 /* Pods_TrialTinder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4607EDDB273542E34D4E4130 /* Pods_TrialTinderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +77,7 @@
 				5B754B7E1F03D29600EF1DC9 /* TrialTinderTests */,
 				5B754B681F03D29600EF1DC9 /* Products */,
 				5B754B8A1F03D93700EF1DC9 /* Frameworks */,
+				F9D471A41981BBBB0648732C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,8 +118,21 @@
 			children = (
 				5B754B8B1F03D93800EF1DC9 /* Koloda.framework */,
 				5B754B8C1F03D93800EF1DC9 /* pop.framework */,
+				F0D2BCD53BF13AD4145CA599 /* Pods_TrialTinder.framework */,
+				9E8A8175F68F3014E486C6BB /* Pods_TrialTinderTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9D471A41981BBBB0648732C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				176B20397A36B950173B19C9 /* Pods-TrialTinder.debug.xcconfig */,
+				287D6F675FA8F13023D86DCA /* Pods-TrialTinder.release.xcconfig */,
+				F32F1CFCFD027659F02D5AAE /* Pods-TrialTinderTests.debug.xcconfig */,
+				094CBBCEA3839E189D1DB633 /* Pods-TrialTinderTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,10 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B754B841F03D29600EF1DC9 /* Build configuration list for PBXNativeTarget "TrialTinder" */;
 			buildPhases = (
+				05AF74448B3FC72A4161EA34 /* [CP] Check Pods Manifest.lock */,
 				5B754B631F03D29600EF1DC9 /* Sources */,
 				5B754B641F03D29600EF1DC9 /* Frameworks */,
 				5B754B651F03D29600EF1DC9 /* Resources */,
-				5B754B8F1F03D95100EF1DC9 /* Copy Carthage frameworks */,
+				624FD43AEB29B4CECE2DE405 /* [CP] Embed Pods Frameworks */,
+				C9F9A3D0DBDDFBBE537FF685 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,9 +162,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B754B871F03D29600EF1DC9 /* Build configuration list for PBXNativeTarget "TrialTinderTests" */;
 			buildPhases = (
+				55EB938851C2CBF219080F13 /* [CP] Check Pods Manifest.lock */,
 				5B754B771F03D29600EF1DC9 /* Sources */,
 				5B754B781F03D29600EF1DC9 /* Frameworks */,
 				5B754B791F03D29600EF1DC9 /* Resources */,
+				9D0D9AE424EA3A5AE328A211 /* [CP] Embed Pods Frameworks */,
+				2F086758BEF0BF961DB3F827 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,21 +242,95 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5B754B8F1F03D95100EF1DC9 /* Copy Carthage frameworks */ = {
+		05AF74448B3FC72A4161EA34 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Koloda.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/pop.framework",
 			);
-			name = "Copy Carthage frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2F086758BEF0BF961DB3F827 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrialTinderTests/Pods-TrialTinderTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55EB938851C2CBF219080F13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		624FD43AEB29B4CECE2DE405 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrialTinder/Pods-TrialTinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D0D9AE424EA3A5AE328A211 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrialTinderTests/Pods-TrialTinderTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9F9A3D0DBDDFBBE537FF685 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrialTinder/Pods-TrialTinder-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -381,6 +480,7 @@
 		};
 		5B754B851F03D29600EF1DC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 176B20397A36B950173B19C9 /* Pods-TrialTinder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JZ92YFTR72;
@@ -398,6 +498,7 @@
 		};
 		5B754B861F03D29600EF1DC9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 287D6F675FA8F13023D86DCA /* Pods-TrialTinder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JZ92YFTR72;
@@ -415,6 +516,7 @@
 		};
 		5B754B881F03D29600EF1DC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F32F1CFCFD027659F02D5AAE /* Pods-TrialTinderTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -430,6 +532,7 @@
 		};
 		5B754B891F03D29600EF1DC9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 094CBBCEA3839E189D1DB633 /* Pods-TrialTinderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -462,6 +565,7 @@
 				5B754B861F03D29600EF1DC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5B754B871F03D29600EF1DC9 /* Build configuration list for PBXNativeTarget "TrialTinderTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +574,7 @@
 				5B754B891F03D29600EF1DC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
