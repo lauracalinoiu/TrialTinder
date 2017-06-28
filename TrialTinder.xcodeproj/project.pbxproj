@@ -12,6 +12,7 @@
 		5B0F1CC11F03FB510092FB31 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B0F1CC01F03FB510092FB31 /* GoogleService-Info.plist */; };
 		5B0F1CC31F04245E0092FB31 /* SwipeCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B0F1CC21F04245E0092FB31 /* SwipeCardView.xib */; };
 		5B0F1CC51F04251E0092FB31 /* SwipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0F1CC41F04251E0092FB31 /* SwipeCardView.swift */; };
+		5B0F1CC71F0440490092FB31 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0F1CC61F0440490092FB31 /* Chat.swift */; };
 		5B754B6B1F03D29600EF1DC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B754B6A1F03D29600EF1DC9 /* AppDelegate.swift */; };
 		5B754B6D1F03D29600EF1DC9 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B754B6C1F03D29600EF1DC9 /* SwipeViewController.swift */; };
 		5B754B701F03D29600EF1DC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B754B6E1F03D29600EF1DC9 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		5B0F1CC01F03FB510092FB31 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5B0F1CC21F04245E0092FB31 /* SwipeCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwipeCardView.xib; sourceTree = "<group>"; };
 		5B0F1CC41F04251E0092FB31 /* SwipeCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeCardView.swift; sourceTree = "<group>"; };
+		5B0F1CC61F0440490092FB31 /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		5B754B671F03D29600EF1DC9 /* TrialTinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrialTinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B754B6A1F03D29600EF1DC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B754B6C1F03D29600EF1DC9 /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				5B754B6C1F03D29600EF1DC9 /* SwipeViewController.swift */,
 				5B754B901F03DED300EF1DC9 /* CustomKolodaView.swift */,
 				5B0F1CBE1F03F1AB0092FB31 /* Person.swift */,
+				5B0F1CC61F0440490092FB31 /* Chat.swift */,
 				5B754B6E1F03D29600EF1DC9 /* Main.storyboard */,
 				5B754B711F03D29600EF1DC9 /* Assets.xcassets */,
 				5B754B731F03D29600EF1DC9 /* LaunchScreen.storyboard */,
@@ -353,6 +356,7 @@
 				5B754B6D1F03D29600EF1DC9 /* SwipeViewController.swift in Sources */,
 				5B0F1CBF1F03F1AB0092FB31 /* Person.swift in Sources */,
 				5B754B6B1F03D29600EF1DC9 /* AppDelegate.swift in Sources */,
+				5B0F1CC71F0440490092FB31 /* Chat.swift in Sources */,
 				5B0F1CC51F04251E0092FB31 /* SwipeCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

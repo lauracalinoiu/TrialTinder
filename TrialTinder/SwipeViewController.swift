@@ -52,9 +52,10 @@ class SwipeViewController: UIViewController {
                 
             }
             
-            self.dispatch_group.notify(queue: DispatchQueue.main, execute: {
-                print("All Done"); completion()
-            })
+            self.dispatch_group.notify(queue: DispatchQueue.main) {
+                print("All Done")
+                completion()
+            }
         }
 
     }
