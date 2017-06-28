@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4607EDDB273542E34D4E4130 /* Pods_TrialTinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8A8175F68F3014E486C6BB /* Pods_TrialTinderTests.framework */; };
+		5B0F1CBF1F03F1AB0092FB31 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0F1CBE1F03F1AB0092FB31 /* Person.swift */; };
+		5B0F1CC11F03FB510092FB31 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B0F1CC01F03FB510092FB31 /* GoogleService-Info.plist */; };
 		5B754B6B1F03D29600EF1DC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B754B6A1F03D29600EF1DC9 /* AppDelegate.swift */; };
 		5B754B6D1F03D29600EF1DC9 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B754B6C1F03D29600EF1DC9 /* SwipeViewController.swift */; };
 		5B754B701F03D29600EF1DC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B754B6E1F03D29600EF1DC9 /* Main.storyboard */; };
@@ -32,6 +34,8 @@
 		094CBBCEA3839E189D1DB633 /* Pods-TrialTinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrialTinderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrialTinderTests/Pods-TrialTinderTests.release.xcconfig"; sourceTree = "<group>"; };
 		176B20397A36B950173B19C9 /* Pods-TrialTinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrialTinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrialTinder/Pods-TrialTinder.debug.xcconfig"; sourceTree = "<group>"; };
 		287D6F675FA8F13023D86DCA /* Pods-TrialTinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrialTinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrialTinder/Pods-TrialTinder.release.xcconfig"; sourceTree = "<group>"; };
+		5B0F1CBE1F03F1AB0092FB31 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		5B0F1CC01F03FB510092FB31 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5B754B671F03D29600EF1DC9 /* TrialTinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrialTinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B754B6A1F03D29600EF1DC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B754B6C1F03D29600EF1DC9 /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
@@ -94,10 +98,12 @@
 				5B754B6A1F03D29600EF1DC9 /* AppDelegate.swift */,
 				5B754B6C1F03D29600EF1DC9 /* SwipeViewController.swift */,
 				5B754B901F03DED300EF1DC9 /* CustomKolodaView.swift */,
+				5B0F1CBE1F03F1AB0092FB31 /* Person.swift */,
 				5B754B6E1F03D29600EF1DC9 /* Main.storyboard */,
 				5B754B711F03D29600EF1DC9 /* Assets.xcassets */,
 				5B754B731F03D29600EF1DC9 /* LaunchScreen.storyboard */,
 				5B754B761F03D29600EF1DC9 /* Info.plist */,
+				5B0F1CC01F03FB510092FB31 /* GoogleService-Info.plist */,
 			);
 			path = TrialTinder;
 			sourceTree = "<group>";
@@ -223,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B754B751F03D29600EF1DC9 /* LaunchScreen.storyboard in Resources */,
+				5B0F1CC11F03FB510092FB31 /* GoogleService-Info.plist in Resources */,
 				5B754B721F03D29600EF1DC9 /* Assets.xcassets in Resources */,
 				5B754B701F03D29600EF1DC9 /* Main.storyboard in Resources */,
 			);
@@ -337,6 +344,7 @@
 			files = (
 				5B754B911F03DED300EF1DC9 /* CustomKolodaView.swift in Sources */,
 				5B754B6D1F03D29600EF1DC9 /* SwipeViewController.swift in Sources */,
+				5B0F1CBF1F03F1AB0092FB31 /* Person.swift in Sources */,
 				5B754B6B1F03D29600EF1DC9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

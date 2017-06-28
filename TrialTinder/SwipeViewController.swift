@@ -8,25 +8,57 @@
 
 import UIKit
 import Koloda
+import FirebaseDatabase
 
 class SwipeViewController: UIViewController {
     
     @IBOutlet weak var kolodaView: KolodaView!
-    let images = ["portret2", "portret"]
+    var persons: [Person] = []
+    var ref: DatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         kolodaView.dataSource = self
         kolodaView.delegate = self
+        
+        self.ref = Database.database().reference()
+        
+        loadData (){
+            for person in self.persons {
+                URLSession.shared.dataTask(with: NSURL(string: person.image)! as URL, completionHandler: { (data, response, error) -> Void in
+                    
+                    guard error == nil else { return }
+                    DispatchQueue.main.async(execute: { () -> Void in
+                        person.imageData = data
+                    })
+                    
+                }).resume()
+            }
+        }
+        
+        
+        
     }
 
+    func loadData(completion: @escaping () -> () ) {
+        _ = ref.child("persons").observeSingleEvent(of: .value, with: {(snapshot) in
+            for child in snapshot.children.allObjects {
+                
+                if let snap = child as? DataSnapshot, let person = Person(snapshot: snap) {
+                    self.persons.append(person)
+                }
+            }
+            
+            completion()
+        })
+    }
 }
 
 extension SwipeViewController: KolodaViewDelegate {
- 
+    
     func koloda(koloda: KolodaView, didSelectCardAt index: Int) {
-        //segue to detail page
+        //segue to detail
     }
 }
 
@@ -37,11 +69,11 @@ extension SwipeViewController: KolodaViewDataSource {
 
     
     func kolodaNumberOfCards(_ koloda:KolodaView) -> Int {
-        return images.count
+        return persons.count
     }
     
     func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
-        return UIImageView(image: UIImage(named: images[index]))
+        return UIImageView(image: UIImage(data: persons[index].imageData!))
     }
     
     func koloda(koloda: KolodaView, viewForCardOverlayAt index: Int) -> OverlayView? {
