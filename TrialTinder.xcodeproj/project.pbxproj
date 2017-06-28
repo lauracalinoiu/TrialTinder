@@ -42,8 +42,6 @@
 		5B754B7B1F03D29600EF1DC9 /* TrialTinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrialTinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B754B7F1F03D29600EF1DC9 /* TrialTinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialTinderTests.swift; sourceTree = "<group>"; };
 		5B754B811F03D29600EF1DC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B754B8B1F03D93800EF1DC9 /* Koloda.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Koloda.framework; path = Carthage/Build/iOS/Koloda.framework; sourceTree = "<group>"; };
-		5B754B8C1F03D93800EF1DC9 /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = Carthage/Build/iOS/pop.framework; sourceTree = "<group>"; };
 		5B754B901F03DED300EF1DC9 /* CustomKolodaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomKolodaView.swift; sourceTree = "<group>"; };
 		9E8A8175F68F3014E486C6BB /* Pods_TrialTinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrialTinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D2BCD53BF13AD4145CA599 /* Pods_TrialTinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrialTinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,8 +114,6 @@
 		5B754B8A1F03D93700EF1DC9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5B754B8B1F03D93800EF1DC9 /* Koloda.framework */,
-				5B754B8C1F03D93800EF1DC9 /* pop.framework */,
 				F0D2BCD53BF13AD4145CA599 /* Pods_TrialTinder.framework */,
 				9E8A8175F68F3014E486C6BB /* Pods_TrialTinderTests.framework */,
 			);
