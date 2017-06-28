@@ -12,6 +12,7 @@ import Koloda
 class SwipeViewController: UIViewController {
     
     @IBOutlet weak var kolodaView: KolodaView!
+    let images = ["portret2", "portret"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,28 +24,28 @@ class SwipeViewController: UIViewController {
 }
 
 extension SwipeViewController: KolodaViewDelegate {
-    func kolodaDidRunOutOfCards(koloda: KolodaView) {
-        //dataSource.reset()
-        print("Run out of cards!")
-    }
-    
+ 
     func koloda(koloda: KolodaView, didSelectCardAt index: Int) {
-        UIApplication.sharedApplication().openURL(NSURL(string: "https://yalantis.com/")!)
+        //segue to detail page
     }
 }
 
 extension SwipeViewController: KolodaViewDataSource {
+    func kolodaSpeedThatCardShouldDrag(_ koloda: KolodaView) -> DragSpeed {
+        return .default
+    }
+
     
-    func kolodaNumberOfCards(koloda:KolodaView) -> Int {
+    func kolodaNumberOfCards(_ koloda:KolodaView) -> Int {
         return images.count
     }
     
-    func koloda(koloda: KolodaView, viewForCardAt index: Int) -> UIView {
-        return UIImageView(image: images[index])
+    func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
+        return UIImageView(image: UIImage(named: images[index]))
     }
     
     func koloda(koloda: KolodaView, viewForCardOverlayAt index: Int) -> OverlayView? {
-        return NSBundle.mainBundle().loadNibNamed("OverlayView",
-                                                  owner: self, options: nil)[0] as? OverlayView
+        return Bundle.main.loadNibNamed("OverlayView",
+                                                  owner: self, options: nil)?[0] as? OverlayView
     }
 }
